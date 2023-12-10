@@ -1,0 +1,38 @@
+{
+    "name": "@budarin/service-stub",
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "type": "module",
+    "sideEffects": false,
+    "repository": {
+        "url": "git+https://github.com/budarin/service-stub.git"
+    },
+    "author": "Vadim Budarin <budarin-vv@yandex.ru>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/budarin/service-stub/issues"
+    },
+    "homepage": "https://github.com/budarin/service-stub#readme",
+    "description": "Proxy wrapper for deferring interactions with uninitialized services until readiness.",
+    "keywords": [
+        "proxy",
+        "stub",
+        "deferred",
+        "service"
+    ],
+    "devDependencies": {
+        "typescript": "^5.3.2"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "build": "sh ./tools/build.sh",
+        "patch-version": "npm version patch",
+        "prepublish": "npm run build",
+        "npm-publish": "npm run build && npm publish",
+        "upgrade deps": "yarn upgrade-interactive --latest;"
+    }
+}
