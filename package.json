@@ -1,10 +1,6 @@
 {
     "name": "@budarin/service-stub",
-<<<<<<< HEAD
-    "version": "1.0.2",
-=======
     "version": "1.0.4",
->>>>>>> d76858907d756ec84824bcc8cb9d9e6c2102256f
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "type": "module",
@@ -26,7 +22,7 @@
         "service"
     ],
     "devDependencies": {
-        "typescript": "^5.4.2"
+        "typescript": "^5.4.3"
     },
     "publishConfig": {
         "access": "public",
