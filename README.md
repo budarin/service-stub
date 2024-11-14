@@ -13,9 +13,13 @@ yarn add @budarin/service-stub
 ```ts
 import { createServiceStub } from '@budarin/service-stub';
 
-const stub = createServiceStub('Service not initialized');
+const stub = createServiceStub('cool-service', 'Service not initialized:');
+stub.log('Hi World!');
+// => 'Service not initialized: cool-service'
 
-stub.log('Hi World!'); // => Error: Service not initialized
+const stub = createServiceStub('cool-service');
+stub.log('Hi World!');
+// => 'Попытка обратиться к неинициализированному сервису: cool-service'
 ```
 
 ## License

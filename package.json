@@ -1,6 +1,6 @@
 {
     "name": "@budarin/service-stub",
-    "version": "1.0.5",
+    "version": "2.0.0",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "type": "module",
@@ -33,6 +33,6 @@
         "upgrade deps": "yarn upgrade-interactive --latest;"
     },
     "devDependencies": {
-        "typescript": "^5.4.3"
+        "typescript": "^5.6.3"
     }
 }
