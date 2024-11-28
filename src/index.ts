@@ -1,4 +1,4 @@
-export const createServiceStub = (
+export const createServiceStub = <T>(
     serviceName: string,
     errorMessage = 'Попытка обратиться к неинициализированному сервису:',
 ) => {
@@ -9,5 +9,5 @@ export const createServiceStub = (
     return new Proxy(() => {}, {
         get: serviceIsNotInitialized,
         apply: serviceIsNotInitialized,
-    });
+    }) as unknown as T;
 };
